@@ -294,6 +294,10 @@ body {
     transform: translateX(0);
     box-shadow: -8px 0px 20px rgb(0 0 0 / 20%);
   }
+
+  .popup-modal {
+    display: none;
+  }
 }
 
 /* MEDIUM */
