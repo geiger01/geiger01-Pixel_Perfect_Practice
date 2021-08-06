@@ -1,69 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="styles/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
     <title>Blogin</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="screen" onclick="toggleMenu()"></div>
-    
-    <header class="main-header ">
-        <div class="nav-bar-container main-layout">
-            <div class="logo">Blogin<span>.</span></div>
-            <div onclick="toggleMenu()" class="hamburger"><i class="fas fa-bars"></i></div>
-            <ul class="main-nav nav-not-show">
-                <li><a href="" onclick="toggleMenu()">Journal</a></li>
-                <li><a href="" onclick="toggleMenu()">About</a></li>
-                <li><a href="" onclick="toggleMenu()">Work</a></li>
-                <li><a href="" onclick="toggleMenu()">Contact</a></li>
-            </ul>
+    <div class="modal-screen" onclick="toggleModal()"></div>
+
+    <header class="main-header">
+      <div class="nav-bar-container main-layout">
+        <div class="logo">Blogin<span>.</span></div>
+        <div onclick="toggleMenu()" class="hamburger">
+          <i class="fas fa-bars"></i>
         </div>
+        <ul class="main-nav nav-not-show">
+          <li><a href="" onclick="toggleMenu()">Journal</a></li>
+          <li><a href="" onclick="toggleMenu()">About</a></li>
+          <li><a href="" onclick="toggleMenu()">Work</a></li>
+          <li><a href="" onclick="toggleMenu()">Contact</a></li>
+        </ul>
+      </div>
     </header>
     <main class="main-content main-layout">
-        <div class="card">
-            <img  class="main-img" src="images/001.jpg" alt="">
-            <div class="card-content">
-                <h3>Duis aute irure dolor in henderit in voluptate.</h3>
-                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.  <br><br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...</p>
-                <button  >Continue Reading <span class="arrow"><img src="images/btn-arrow.png" alt=""></span> </button>
-            </div>
+      <div class="card">
+        <img class="main-img" src="images/001.jpg" alt="" />
+        <div class="card-content">
+          <h3>Duis aute irure dolor in henderit in voluptate.</h3>
+          <p>
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commo doconsequat, sunt in culpa qui officia
+            deserunt mollit anim id est laborum. <br /><br />
+            Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur...
+          </p>
+          <button onclick="toggleModal()">
+            Continue Reading
+            <span class="arrow"><img src="images/btn-arrow.png" alt="" /></span>
+          </button>
         </div>
-        <div class="card">
-            <img class="main-img"  src="images/002.jpg" alt="">
-            <div class="card-content">
-                <h3>Duis aute irure dolor in henderit in voluptate.</h3>
-                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.  <br><br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...</p>
-                <button  >Continue Reading <span class="arrow"><img src="images/btn-arrow.png" alt=""></span> </button>
-            </div>
+      </div>
+      <div class="card">
+        <img class="main-img" src="images/002.jpg" alt="" />
+        <div class="card-content">
+          <h3>Duis aute irure dolor in henderit in voluptate.</h3>
+          <p>
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commo doconsequat, sunt in culpa qui officia
+            deserunt mollit anim id est laborum. <br /><br />
+            Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur...
+          </p>
+          <button onclick="toggleModal()">
+            Continue Reading
+            <span class="arrow"><img src="images/btn-arrow.png" alt="" /></span>
+          </button>
         </div>
-        <div class="card">
-            <img  class="main-img" src="images/003.jpg" alt="">
-            <div class="card-content">
-                <h3>Duis aute irure dolor in henderit in voluptate.</h3>
-                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.  <br><br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...</p>
-                <button >Continue Reading <span class="arrow"><img src="images/btn-arrow.png" alt=""></span> </button>
-            </div>
+      </div>
+      <div class="card">
+        <img class="main-img" src="images/003.jpg" alt="" />
+        <div class="card-content">
+          <h3>Duis aute irure dolor in henderit in voluptate.</h3>
+          <p>
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commo doconsequat, sunt in culpa qui officia
+            deserunt mollit anim id est laborum. <br /><br />
+            Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur...
+          </p>
+          <button onclick="toggleModal()">
+            Continue Reading
+            <span class="arrow"><img src="images/btn-arrow.png" alt="" /></span>
+          </button>
         </div>
-        <div class="page-nav">
-            <a href=""> <span><img src="images/left-arrow.png" alt=""></span> Previous</a>
-            <a href="">Next<span><img src="images/right-arrow.png" alt=""></span></a>
-        </div>
+      </div>
+      <div class="page-nav">
+        <a href="">
+          <span><img src="images/left-arrow.png" alt="" /></span> Previous</a
+        >
+        <a href=""
+          >Next<span><img src="images/right-arrow.png" alt="" /></span
+        ></a>
+      </div>
     </main>
     <footer class="footer-container">
-        <div class="logo">Blogin<span>.</span></div>
-        <small>© 2014 Blogin.com  -  All Rights Reserved  -  Find more free Templates at <span>Pixelhint.com</span></small>
-        <div class="socials">
-           <div class="social-icon"><i class=" fab fa-facebook-f"></i></div> 
-            <div class="social-icon"><i class="  fab fa-twitter "></i></div>
-            <div class="social-icon"><i class="  fab fa-behance"></i></div>
-            <div class="social-icon"><i class="  fab fa-dribbble"></i></div>
-        </div>
+      <div class="logo">Blogin<span>.</span></div>
+      <small
+        >© 2014 Blogin.com - All Rights Reserved - Find more free Templates at
+        <span>Pixelhint.com</span></small
+      >
+      <div class="socials">
+        <div class="social-icon"><i class="fab fa-facebook-f"></i></div>
+        <div class="social-icon"><i class="fab fa-twitter"></i></div>
+        <div class="social-icon"><i class="fab fa-behance"></i></div>
+        <div class="social-icon"><i class="fab fa-dribbble"></i></div>
+      </div>
     </footer>
 
+    <div class="popup-modal">
+      <div class="modal-content">
+        <h3>Duis aute irure dolor in henderit in voluptate.</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
+          obcaecati ipsam quaerat quam excepturi corporis a neque suscipit
+          cumque provident
+          <br />
+          <br />
+          dolores in nemo vero, eveniet aliquam dolor molestias enim iure?
+          Provident excepturi placeat libero saepe.
+        </p>
+        <button onclick="toggleModal()">Close</button>
+      </div>
+    </div>
+
     <script src="js/main.js"></script>
-</body>
+  </body>
 </html>
