@@ -262,6 +262,78 @@ body {
   width: 21rem;
 }
 
+/* MODAL */
+
+.popup-modal {
+  z-index: 3;
+  display: none;
+  background-color: rgb(247, 247, 247);
+  border: 1px solid #494949;
+  position: fixed;
+  width: 20rem;
+  height: 22rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20rem;
+  margin: auto;
+  color: #494949;
+  padding: 1.05rem;
+}
+
+.modal-content h3 {
+  font-size: 1.45rem;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+.modal-content p {
+  margin-bottom: 2rem;
+  font-size: 0.8rem;
+}
+
+.modal-content button {
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 1rem;
+  color: white;
+  background-color: #777777;
+  border: none;
+  width: 10rem;
+  height: 3rem;
+
+  transition: 0.3s;
+}
+
+.modal-content button:hover {
+  background-color: rgb(212, 212, 212);
+}
+
+.modal-screen {
+  z-index: 2;
+  position: fixed;
+  background-color: rgb(105, 49, 49);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.6s;
+}
+
+body.modal-open .modal-screen {
+  opacity: 1;
+  pointer-events: auto;
+}
+
 /* MEDIA QUERIES */
 
 /* SMALL */
@@ -293,10 +365,6 @@ body {
   body.menu-open .main-nav {
     transform: translateX(0);
     box-shadow: -8px 0px 20px rgb(0 0 0 / 20%);
-  }
-
-  .popup-modal {
-    display: none;
   }
 }
 
@@ -350,73 +418,31 @@ body {
   }
 
   .popup-modal {
-    z-index: 3;
-    display: none;
-    background-color: rgb(247, 247, 247);
-    border: 1px solid #494949;
-    position: fixed;
     width: 27rem;
     height: 23.5rem;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
   }
 
   .modal-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     width: 25rem;
     margin: auto;
-    color: #494949;
-    padding: 1.05rem;
   }
 
   .modal-content h3 {
     font-size: 1.75rem;
-    text-transform: uppercase;
+  }
+  .modal-content p {
+    font-size: 1rem;
     margin-bottom: 2.5rem;
   }
 
-  .modal-content p {
-    margin-bottom: 2rem;
-  }
-
   .modal-content button {
-    cursor: pointer;
-    text-transform: uppercase;
     font-size: 1.5rem;
-    color: white;
-    background-color: #777777;
-    border: none;
     width: 10rem;
     height: 3.5rem;
-
-    transition: 0.3s;
   }
 
   .modal-content button:hover {
     background-color: rgb(212, 212, 212);
-  }
-
-  .modal-screen {
-    z-index: 2;
-    position: fixed;
-    background-color: rgb(105, 49, 49);
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    cursor: pointer;
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.6s;
-  }
-
-  body.modal-open .modal-screen {
-    opacity: 1;
-    pointer-events: auto;
   }
 }
 
