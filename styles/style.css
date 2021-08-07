@@ -366,6 +366,19 @@ body.modal-open .modal-screen {
     transform: translateX(0);
     box-shadow: -8px 0px 20px rgb(0 0 0 / 20%);
   }
+
+  .drop-down-menu {
+    display: none;
+  }
+
+  .drop-down-menu .drop-down-item {
+    padding: 10px 0;
+    text-align: start;
+    border-bottom: 1px solid rgb(145, 145, 145, 0.5);
+  }
+  .drop-down-menu .drop-down-item:hover {
+    border-bottom: 1px solid rgb(126, 194, 106);
+  }
 }
 
 /* MEDIUM */
@@ -452,17 +465,17 @@ body.modal-open .modal-screen {
     height: 100px;
   }
 
-  .drop-down-container:hover .drop-down-menu {
-    opacity: 1;
-    pointer-events: auto;
-  }
-
   .drop-down-menu {
     background-color: #292929;
     opacity: 0;
     pointer-events: none;
 
     transition: 0.3s ease;
+  }
+
+  .drop-down-container:hover .drop-down-menu {
+    opacity: 1;
+    pointer-events: auto;
   }
 
   .drop-down-menu .drop-down-item {
